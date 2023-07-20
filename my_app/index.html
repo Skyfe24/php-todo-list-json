@@ -47,7 +47,7 @@ Abilitare l’eliminazione di un task                                           
                         <div class="col-12">
                             <h1>TO DO LIST</h1>
                             <ul class="list-group list-group-flush border border-1">
-                                <li class="list-group-item"> FIRST TASK</li>
+                                <li v-for="task in tasks" :key="task" class="list-group-item"> {{ task }} </li>
                             </ul>
 
                         </div>
@@ -76,9 +76,9 @@ Abilitare l’eliminazione di un task                                           
                 </div>
 
             </div>
+        </div>
 
-
-
+    </div>
 
 
 
